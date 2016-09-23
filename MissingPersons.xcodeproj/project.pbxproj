@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0EC8ED86604646AD34C94C /* Pods_MissingPersons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA7DB379EB73FB8DEE09CA72 /* Pods_MissingPersons.framework */; };
+		AB3444A81D758D1300EA583E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3444A71D758D1300EA583E /* Person.swift */; };
+		AB3444AA1D758EC200EA583E /* FaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3444A91D758EC200EA583E /* FaceService.swift */; };
 		AB99DAB41D7221310061FCB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99DAB31D7221310061FCB6 /* AppDelegate.swift */; };
 		AB99DAB61D7221310061FCB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99DAB51D7221310061FCB6 /* ViewController.swift */; };
 		AB99DAB91D7221310061FCB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99DAB71D7221310061FCB6 /* Main.storyboard */; };
 		AB99DABB1D7221310061FCB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB99DABA1D7221310061FCB6 /* Assets.xcassets */; };
 		AB99DABE1D7221310061FCB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB99DABC1D7221310061FCB6 /* LaunchScreen.storyboard */; };
+		AB99DAC61D7339920061FCB6 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99DAC51D7339910061FCB6 /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B9C425F7C39DEA6551856EA /* Pods-MissingPersons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissingPersons.release.xcconfig"; path = "Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons.release.xcconfig"; sourceTree = "<group>"; };
+		AB3444A41D74E3A100EA583E /* MissingPersons-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MissingPersons-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB3444A71D758D1300EA583E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		AB3444A91D758EC200EA583E /* FaceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceService.swift; sourceTree = "<group>"; };
 		AB99DAB01D7221310061FCB6 /* MissingPersons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissingPersons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB99DAB31D7221310061FCB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB99DAB51D7221310061FCB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,9 @@
 		AB99DABA1D7221310061FCB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB99DABD1D7221310061FCB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB99DABF1D7221310061FCB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB99DAC51D7339910061FCB6 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		CA7DB379EB73FB8DEE09CA72 /* Pods_MissingPersons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissingPersons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07A2E90239094FD97990B95 /* Pods-MissingPersons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MissingPersons.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +40,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F0EC8ED86604646AD34C94C /* Pods_MissingPersons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B8F19676538B8818418E8C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA7DB379EB73FB8DEE09CA72 /* Pods_MissingPersons.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB99DAA71D7221300061FCB6 = {
 			isa = PBXGroup;
 			children = (
 				AB99DAB21D7221310061FCB6 /* MissingPersons */,
 				AB99DAB11D7221310061FCB6 /* Products */,
+				E3772FE31D5A04A7709603A9 /* Pods */,
+				1B8F19676538B8818418E8C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +78,25 @@
 			children = (
 				AB99DAB31D7221310061FCB6 /* AppDelegate.swift */,
 				AB99DAB51D7221310061FCB6 /* ViewController.swift */,
+				AB99DAC51D7339910061FCB6 /* PersonCell.swift */,
 				AB99DAB71D7221310061FCB6 /* Main.storyboard */,
 				AB99DABA1D7221310061FCB6 /* Assets.xcassets */,
 				AB99DABC1D7221310061FCB6 /* LaunchScreen.storyboard */,
 				AB99DABF1D7221310061FCB6 /* Info.plist */,
+				AB3444A41D74E3A100EA583E /* MissingPersons-Bridging-Header.h */,
+				AB3444A71D758D1300EA583E /* Person.swift */,
+				AB3444A91D758EC200EA583E /* FaceService.swift */,
 			);
 			path = MissingPersons;
+			sourceTree = "<group>";
+		};
+		E3772FE31D5A04A7709603A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F07A2E90239094FD97990B95 /* Pods-MissingPersons.debug.xcconfig */,
+				7B9C425F7C39DEA6551856EA /* Pods-MissingPersons.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB99DAC21D7221320061FCB6 /* Build configuration list for PBXNativeTarget "MissingPersons" */;
 			buildPhases = (
+				FD5C39F1303DB198FA84EFC5 /* [CP] Check Pods Manifest.lock */,
 				AB99DAAC1D7221310061FCB6 /* Sources */,
 				AB99DAAD1D7221310061FCB6 /* Frameworks */,
 				AB99DAAE1D7221310061FCB6 /* Resources */,
+				ECE6C9DAFE2EED245CAE4997 /* [CP] Embed Pods Frameworks */,
+				F73561E9760016370AC90FC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +169,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ECE6C9DAFE2EED245CAE4997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F73561E9760016370AC90FC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MissingPersons/Pods-MissingPersons-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5C39F1303DB198FA84EFC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AB99DAAC1D7221310061FCB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB3444AA1D758EC200EA583E /* FaceService.swift in Sources */,
+				AB99DAC61D7339920061FCB6 /* PersonCell.swift in Sources */,
 				AB99DAB61D7221310061FCB6 /* ViewController.swift in Sources */,
+				AB3444A81D758D1300EA583E /* Person.swift in Sources */,
 				AB99DAB41D7221310061FCB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,23 +339,30 @@
 		};
 		AB99DAC31D7221320061FCB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F07A2E90239094FD97990B95 /* Pods-MissingPersons.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MissingPersons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vidur.learning.MissingPersons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MissingPersons/MissingPersons-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		AB99DAC41D7221320061FCB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B9C425F7C39DEA6551856EA /* Pods-MissingPersons.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MissingPersons/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vidur.learning.MissingPersons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MissingPersons/MissingPersons-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -289,6 +385,7 @@
 				AB99DAC41D7221320061FCB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
